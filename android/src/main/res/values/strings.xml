@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lib.Umeng.share</string>
+    <string name="tips_app_not_install">请先安装客户端</string>
+
+    <string name="tips_share_rel_cancel">分享已取消</string>
+    <string name="tips_share_rel_error">分享失败</string>
+    <string name="tips_share_rel_ok">已分享</string>
+</resources>

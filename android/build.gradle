@@ -1,0 +1,60 @@
+group 'ws.dyt.plugin.umeng'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.2.30'
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 27
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        minSdkVersion 16
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+
+    //1.5.3 No field umDebugLog of type Lcom/umeng/commonsdk/debug/UMDebugLog; in class Lcom/umeng/commonsdk/UMConfigure; or its superclasses (declaration of 'com.umeng.commonsdk.UMConfigure' appears in /data/app/ws.dyt.justjoke-1/base.apk:classes2.dex)
+    implementation 'com.umeng.sdk:common:1.5.1'
+    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+
+    implementation 'com.umeng.sdk:share-core:6.9.2'
+    implementation 'com.umeng.sdk:share-qq:6.9.1.1'//fuck 6.9.2 fetch failed
+    implementation 'com.umeng.sdk:share-wechat:6.9.2'
+    implementation 'com.umeng.sdk:share-sina:6.9.1.1'
+}

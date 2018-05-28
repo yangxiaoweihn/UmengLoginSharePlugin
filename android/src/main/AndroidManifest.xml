@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="ws.dyt.plugin.umeng.loginshare">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application>
+        <activity
+            android:name=".plugin.LoginPluginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".plugin.SharePluginActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver
+            android:name=".main.ModuleInitReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="ws.dyt.lib#umeng.share.init.ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".main.ActionDispatchMonitorReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="ws.dyt.lib#umeng.share.data.ACTION" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

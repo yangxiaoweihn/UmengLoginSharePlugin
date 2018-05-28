@@ -1,0 +1,5 @@
+<resources>
+    <string name="action_umeng_share_init">ws.dyt.lib#umeng.share.init.ACTION</string>
+    <string name="action_umeng_share_data">ws.dyt.lib#umeng.share.data.ACTION</string>
+    <string name="action_umeng_login_data">ws.dyt.lib#umeng.login.data.ACTION</string>
+</resources>
