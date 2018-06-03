@@ -55,6 +55,6 @@ dependencies {
 
     implementation 'com.umeng.sdk:share-core:6.9.2'
     implementation 'com.umeng.sdk:share-qq:6.9.1.1'//fuck 6.9.2 fetch failed
-    implementation 'com.umeng.sdk:share-wechat:6.9.2'
+    api 'com.umeng.sdk:share-wechat:6.9.2'
     implementation 'com.umeng.sdk:share-sina:6.9.1.1'
 }

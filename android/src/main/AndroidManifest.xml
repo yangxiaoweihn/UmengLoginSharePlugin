@@ -8,6 +8,31 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_APPKEY}" />
+        <meta-data
+            android:name="WX_APPKEY"
+            android:value="${WX_APPKEY}" />
+        <meta-data
+            android:name="WX_APPSECRET"
+            android:value="${WX_APPSECRET}" />
+        <meta-data
+            android:name="QQ_APPKEY"
+            android:value="${QQ_APPKEY}" />
+        <meta-data
+            android:name="QQ_APPSECRET"
+            android:value="${QQ_APPSECRET}" />
+        <meta-data
+            android:name="SINA_APPKEY"
+            android:value="${SINA_APPKEY}" />
+        <meta-data
+            android:name="SINA_APPSECRET"
+            android:value="${SINA_APPSECRET}" />
+        <meta-data
+            android:name="SINA_URL"
+            android:value="${SINA_URL}" />
+
         <activity
             android:name=".plugin.LoginPluginActivity"
             android:screenOrientation="portrait" />

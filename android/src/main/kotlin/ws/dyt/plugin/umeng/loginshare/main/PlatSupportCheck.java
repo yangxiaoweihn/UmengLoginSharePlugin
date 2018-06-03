@@ -12,6 +12,7 @@ import ws.dyt.plugin.umeng.loginshare.utils.LoginShareLog;
  * 平台支持检测
  */
 public class PlatSupportCheck {
+    private static String TAG = "PlatSupportCheck";
 
     public static boolean checkPlatSupport(String plat, SHARE_MEDIA[] medias) {
         if (TextUtils.isEmpty(plat) || medias == null || medias.length == 0) {
@@ -21,8 +22,8 @@ public class PlatSupportCheck {
         plat = plat.toLowerCase();
         boolean support = false;
         for (SHARE_MEDIA item : medias) {
-            LoginShareLog.d("PlatSupportCheck", "check: "+item.getName().toLowerCase()+" , "+plat);
-            if (item.getName().toLowerCase().equals(plat)) {
+            LoginShareLog.d(TAG, "check: "+item.toString().toLowerCase()+" , "+plat);
+            if (item.toString().toLowerCase().equals(plat)) {
                 support = true;
             }
         }

@@ -19,7 +19,7 @@ import ws.dyt.plugin.umeng.loginshare.utils.Manifest;
  */
 public class ModuleInitReceiver extends BroadcastReceiver {
 
-    private final String TAG = getClass().getSimpleName();
+    private static final String TAG = "ModuleInitReceiver";
 
     public ModuleInitReceiver() {
     }
@@ -31,13 +31,13 @@ public class ModuleInitReceiver extends BroadcastReceiver {
 
         final String ACTION = context.getString(R.string.action_umeng_share_init);
         if (null != action && action.equals(ACTION)) {
-            this.init(context);
+//            this.init(context);
+
+            fuckInit(context);
         }
     }
 
-    private void init(Context context) {
-
-        fuckInit(context);
+    private static void init(Context context) {
 
         LoginShareLog.e(TAG, Manifest.getMeta(context, "UMENG_APPKEY", null)+"");
         LoginShareLog.e(TAG, Manifest.getMeta(context, "QQ_APPKEY", null)+" , "+Manifest.getMeta(context, "QQ_APPSECRET", null));
@@ -77,5 +77,7 @@ public class ModuleInitReceiver extends BroadcastReceiver {
         UMConfigure.setLogEnabled(true);
         String umengAppKey = Manifest.getMeta(context, "UMENG_APPKEY", null);
         UMConfigure.init(context, umengAppKey, "", UMConfigure.DEVICE_TYPE_PHONE,"");
+
+        init(context);
     }
 }

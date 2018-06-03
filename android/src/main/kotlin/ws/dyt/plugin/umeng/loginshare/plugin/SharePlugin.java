@@ -116,11 +116,10 @@ public class SharePlugin implements MethodChannel.MethodCallHandler{
         return param;
     }
 
-    private static class ResultHandler extends Handler {
-        private MethodChannel.Result result;
+    private static class ResultHandler extends ResultBaseHandler {
 
         ResultHandler(MethodChannel.Result result) {
-            this.result = result;
+            super(result);
         }
 
         @Override
@@ -134,9 +133,9 @@ public class SharePlugin implements MethodChannel.MethodCallHandler{
             if (code == Code.CODE_SUCCESS) {
                 result.success(ResultProtocolForHost.success);
             }else if (code == Code.CODE_ERROR) {
-                result.error(TAG, "The third part share error", ResultProtocolForHost.error);
+                result.error(TAG, "The third part share error", this.errorData(ResultProtocolForHost.error, null));
             }else if (code == Code.CODE_CANCEL) {
-                result.error(TAG, "The third part share cancel", ResultProtocolForHost.cancel);
+                result.error(TAG, "The third part share cancel", this.errorData(ResultProtocolForHost.cancel, null));
             }else {
                 result.notImplemented();
             }

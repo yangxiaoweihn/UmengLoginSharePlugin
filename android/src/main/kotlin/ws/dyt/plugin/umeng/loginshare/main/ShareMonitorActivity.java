@@ -19,6 +19,8 @@ import com.umeng.socialize.bean.SHARE_MEDIA;
 import com.umeng.socialize.media.UMImage;
 import com.umeng.socialize.media.UMWeb;
 
+import java.util.Locale;
+
 import ws.dyt.plugin.umeng.loginshare.R;
 import ws.dyt.plugin.umeng.loginshare.entity.ShareParam;
 import ws.dyt.plugin.umeng.loginshare.utils.LoginShareLog;
@@ -78,8 +80,11 @@ public class ShareMonitorActivity extends Activity implements UMShareListener{
         }
 
         SHARE_MEDIA media = SHARE_MEDIA.convertToEmun(plat);
-        LoginShareLog.d("xxxxx", "plat: "+media+" , "+plat);
         this.mPlat = media;
+        LoginShareLog.d(TAG, String.format(Locale.getDefault(), "plat: "+plat+" , media:  " + media));
+        if (this.mPlat == null) {
+            return;
+        }
 
         if (!UMShareAPI.get(this).isInstall(this, media)) {
             Toast.makeText(this, R.string.tips_app_not_install, Toast.LENGTH_SHORT).show();
@@ -138,7 +143,6 @@ public class ShareMonitorActivity extends Activity implements UMShareListener{
      */
     private void shareImage(SHARE_MEDIA plat){
         //图片大小最好不要超过250k，缩略图不要超过18k
-        LoginShareLog.d("xxxxxx", mUrl);
         UMImage pic = new UMImage(this, mUrl);
         if (!TextUtils.isEmpty(mThumbUrl)) {
             pic.setThumb(new UMImage(this, mThumbUrl));

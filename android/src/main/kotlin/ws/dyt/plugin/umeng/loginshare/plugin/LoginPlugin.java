@@ -5,6 +5,11 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.PluginRegistry;
@@ -61,11 +66,10 @@ public class LoginPlugin implements MethodChannel.MethodCallHandler{
         context.sendBroadcast(intent);
     }
 
-    private static class ResultHandler extends Handler {
-        private MethodChannel.Result result;
+    private static class ResultHandler extends ResultBaseHandler {
 
         ResultHandler(MethodChannel.Result result) {
-            this.result = result;
+            super(result);
         }
 
         @Override
@@ -79,9 +83,9 @@ public class LoginPlugin implements MethodChannel.MethodCallHandler{
             if (code == Code.CODE_SUCCESS) {
                 result.success(msg.obj);
             }else if (code == Code.CODE_ERROR) {
-                result.error(TAG, "The third part login error", new Object[]{ResultProtocolForHost.error, msg.obj});
+                result.error(TAG, "The third part login error", this.errorData(ResultProtocolForHost.error, msg.obj));
             }else if (code == Code.CODE_CANCEL) {
-                result.error(TAG, "The third part login cancel", new Object[]{ResultProtocolForHost.cancel, null});
+                result.error(TAG, "The third part login cancel", this.errorData(ResultProtocolForHost.cancel, null));
             }else {
                 result.notImplemented();
             }

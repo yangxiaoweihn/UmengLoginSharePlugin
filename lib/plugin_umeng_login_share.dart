@@ -30,7 +30,7 @@ class PluginUmengLoginShare {
 
         //映射到其他平台指定类型
         if (plat.toUpperCase() == 'WEIXIN') {
-            return 'wxsession';
+//            return 'wxsession';
         }
 
         return plat;
