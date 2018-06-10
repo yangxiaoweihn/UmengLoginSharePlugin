@@ -3,19 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8dc35ce4-6c55-4670-bdd1-fdf2ddd50dfb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" afterPath="$PROJECT_DIR$/android/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/android/gradlew.bat" afterPath="$PROJECT_DIR$/android/gradlew.bat" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/UmengLoginSharePlugin.kt" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/UmengLoginSharePlugin.kt" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/main/ModuleInitReceiver.java" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/main/ModuleInitReceiver.java" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/main/PlatSupportCheck.java" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/main/PlatSupportCheck.java" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/main/ShareMonitorActivity.java" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/main/ShareMonitorActivity.java" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/plugin/LoginPlugin.java" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/plugin/LoginPlugin.java" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/plugin/SharePlugin.java" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/plugin/SharePlugin.java" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/res/values/umeng_socialize_style.xml" afterPath="$PROJECT_DIR$/android/src/main/res/values/umeng_socialize_style.xml" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradlew.bat" afterPath="$PROJECT_DIR$/example/android/gradlew.bat" />
-      <change beforePath="$PROJECT_DIR$/lib/plugin_umeng_login_share.dart" afterPath="$PROJECT_DIR$/lib/plugin_umeng_login_share.dart" />
+      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" afterPath="$PROJECT_DIR$/android/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/main/ActionDispatchMonitorReceiver.java" afterPath="$PROJECT_DIR$/android/src/main/kotlin/ws/dyt/plugin/umeng/loginshare/main/ActionDispatchMonitorReceiver.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -101,36 +90,6 @@
               <item name="plugin_umeng_login_share" type="b2602c69:ProjectViewProjectNode" />
               <item name="plugin_umeng_login_share" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plugin_umeng_login_share" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="plugin_umeng_login_share" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Flutter for Android" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="plugin_umeng_login_share" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Flutter for Android" type="70bed36:NamedLibraryElementNode" />
-              <item name="flutter.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plugin_umeng_login_share" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Flutter for Android" type="70bed36:NamedLibraryElementNode" />
-              <item name="flutter.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="plugin_umeng_login_share" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Flutter for Android" type="70bed36:NamedLibraryElementNode" />
-              <item name="flutter.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="flutter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,13 +259,13 @@
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1660079" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1660079" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

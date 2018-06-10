@@ -44,7 +44,10 @@ public class ActionDispatchMonitorReceiver extends BroadcastReceiver{
 
         if (null != targetClazz) {
 
-            this.dispatchShare(context, intent.setClass(context, targetClazz));
+            //过来的数据全部都不变-传到要启动的activity中
+            intent.setClass(context, targetClazz);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            this.dispatchShare(context, intent);
         }
     }
 
